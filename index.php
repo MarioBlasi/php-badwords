@@ -1,8 +1,12 @@
 <?php
-$array = ['m', 'b', 'a'];
-echo "<pre>";
-var_dump($array);
-echo "<pre>";
+$name = $_GET["name"];
+
+$name = $_GET["password"];
+
+echo "ciao" . $name
+or "ciao" . $password
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,30 +25,24 @@ echo "<pre>";
     <!--Script Bootstrap bundle-->
 </head>
 <body >
+    <h1>ciao <?php echo $paragrafo;?></h1>
+    <h3>ciao <?php echo $censura;?></h3>
+    
+
    <div class="container  mt-5">
-    <div class="row d-flex justify-content-centre ">
-        <div class="col">
-            <form action="saluto.php" method="GET" >
-                <input type="text" name="nome">
-                <button type="submit">invia</button>
-            </form>
-        </div>
-        <div class="col-10 shadow">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputparagrafo1">invia paragrafo</label>
-                    <input type="paragrafo" class="form-control" id="exampleInputparagrafo1" aria-describedby="paragrafoHelp" placeholder="inserisci paragrafo">
-                    <small id="paragrafoHelp" class="form-text text-muted"></small>
+    <div class="row d-flex justify-content-start ">
+        <div class="col-6 shadow ">
+            <form action="login.php" method="GET" >
+                <div class="mb-3">
+                    <label for="paragrafo">Paragrafo</label>
+                    <input type="text" name="paragrafo"  id="censura" class="form-control" placeholder="inserisci paragrafo" aria-describedby="suffuxId">
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <div class="mb-3">
+                    <label for="censura">Censura</label>
+                    <input type="text" name="censura" id="censura" class="form-control" placeholder="inserisci censura" aria-describedby="suffuxId">
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-info">Submit</button>
+                <button type="reset"class="btn btn-info">Reset</button>
             </form>
         </div>
     </div>
