@@ -16,8 +16,8 @@
 </head>
 <body >
 
-  <div class="container mt-5">
-    <div class="row d-flex justify-content-center ">
+  <div class="container pt-5">
+    <div class="row d-flex justify-content-center">
         <div class="col-8 shadow-lg p-5">
             <?php
             // var_dump($_GET);
@@ -33,10 +33,10 @@
                 echo "<b> $length </b> ";
                 //paragrafo
 
-                echo "<h1>parola censurata:</h1>";
+                echo "<h1>la parola censurata:</h1>";
                 $str = $censura;
                 $length = strlen($str);
-                echo "<p>***</p>";
+                echo "<h4>***</h4>";
                 echo "<p><i>la lunghezza della parola censurata è:</i></p>";
                 echo "<b> $length </b> "
                 // censura

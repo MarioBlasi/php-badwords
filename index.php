@@ -17,17 +17,17 @@
 </head>
 <body >
 
-   <div class="container  mt-5">
-    <div class="row d-flex justify-content-center ">
+   <div class="container pt-5">
+    <div class="row d-flex justify-content-center">
         <div class="col-8 shadow p-5">
             <form action="myscript.php" method="get">
                 <div class="mb-3">
-                    <label for="censura">Censura</label>
+                    <label for="censura"><h1>Censura</h1> </label>
                     <input type="text" name="censura" id="censura" class="form-control" placeholder="inserisci censura" >
                 </div>
                 <!-- CENSURA -->
                 <div class="mb-3">
-                    <label for="paragrafo">Paragrafo:</label>
+                    <label for="paragrafo"> <h1>Paragrafo:</h1> </label>
                     <input type="text" name="paragrafo" id="paragrafo" class="form-control" placeholder="inserisci paragrafo" >
                 </div>
                  <!-- PARAGRAFO -->
