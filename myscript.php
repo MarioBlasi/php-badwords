@@ -17,24 +17,29 @@
 <body >
 
   <div class="container mt-5">
-    <div class="row d-flex justify-content-start ">
-        <div class="col col-6 shadow p-5">
+    <div class="row d-flex justify-content-center ">
+        <div class="col-8 shadow-lg p-5">
             <?php
-
-            var_dump($_GET);
+            // var_dump($_GET);
 
                 $paragrafo = $_GET["paragrafo"];
                 $censura = $_GET["censura"];
 
-
-                // Stampiamo il paragrafo e la sua lunghezza
-            
-            
                 echo "<h1>Il tuo paragrafo è:</h1>";
-                echo $paragrafo;
+                $str = $paragrafo;
+                $length = strlen($str);
+                echo "<h4> $paragrafo </h4>";
+                echo "<p><i>la lunghezza del paragrafo è:</i></p>";
+                echo "<b> $length </b> ";
+                //paragrafo
 
                 echo "<h1>parola censurata:</h1>";
+                $str = $censura;
+                $length = strlen($str);
                 echo "<p>***</p>";
+                echo "<p><i>la lunghezza della parola censurata è:</i></p>";
+                echo "<b> $length </b> "
+                // censura
             ?>
         </div>
     </div>

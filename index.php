@@ -17,23 +17,20 @@
 </head>
 <body >
 
-    
-
    <div class="container  mt-5">
-    <div class="row d-flex justify-content-start ">
-        <div class="col-6 shadow p-5">
-            <form action="myscript.php" method="post">
-                <div class="mb-3">
-                    <label for="paragrafo">Paragrafo:</label>
-                    <input type="text" name="paragrafo"  id="paragrafo" class="form-control" placeholder="inserisci paragrafo" >
-                </div>
-            </form>
-            <!-- section paragrafo -->
-            <form action="myscript.php" method="post">
+    <div class="row d-flex justify-content-center ">
+        <div class="col-8 shadow p-5">
+            <form action="myscript.php" method="get">
                 <div class="mb-3">
                     <label for="censura">Censura</label>
                     <input type="text" name="censura" id="censura" class="form-control" placeholder="inserisci censura" >
                 </div>
+                <!-- CENSURA -->
+                <div class="mb-3">
+                    <label for="paragrafo">Paragrafo:</label>
+                    <input type="text" name="paragrafo" id="paragrafo" class="form-control" placeholder="inserisci paragrafo" >
+                </div>
+                 <!-- PARAGRAFO -->
                 <button type="submit" class="btn btn-info">Submit</button>
                 <button type="reset"class="btn btn-info">Reset</button>
             </form>
