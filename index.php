@@ -1,13 +1,4 @@
-<?php
-$name = $_GET["name"];
 
-$name = $_GET["password"];
-
-echo "ciao" . $name
-or "ciao" . $password
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,25 +16,28 @@ or "ciao" . $password
     <!--Script Bootstrap bundle-->
 </head>
 <body >
-    <h1>ciao <?php echo $paragrafo;?></h1>
-    <h3>ciao <?php echo $censura;?></h3>
+
     
 
    <div class="container  mt-5">
     <div class="row d-flex justify-content-start ">
-        <div class="col-6 shadow ">
-            <form action="login.php" method="GET" >
+        <div class="col-6 shadow p-5">
+            <form action="myscript.php" method="post">
                 <div class="mb-3">
-                    <label for="paragrafo">Paragrafo</label>
-                    <input type="text" name="paragrafo"  id="censura" class="form-control" placeholder="inserisci paragrafo" aria-describedby="suffuxId">
+                    <label for="paragrafo">Paragrafo:</label>
+                    <input type="text" name="paragrafo"  id="paragrafo" class="form-control" placeholder="inserisci paragrafo" >
                 </div>
+            </form>
+            <!-- section paragrafo -->
+            <form action="myscript.php" method="post">
                 <div class="mb-3">
                     <label for="censura">Censura</label>
-                    <input type="text" name="censura" id="censura" class="form-control" placeholder="inserisci censura" aria-describedby="suffuxId">
+                    <input type="text" name="censura" id="censura" class="form-control" placeholder="inserisci censura" >
                 </div>
                 <button type="submit" class="btn btn-info">Submit</button>
                 <button type="reset"class="btn btn-info">Reset</button>
             </form>
+            <!-- section censura button -->
         </div>
     </div>
    </div>
