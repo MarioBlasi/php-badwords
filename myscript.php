@@ -19,28 +19,27 @@
   <div class="container pt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-8 shadow-lg p-5">
-            <?php
-            // var_dump($_GET);
+        <?php
+        $paragrafo = isset($_GET["paragrafo"]) ? $_GET["paragrafo"] : '';
+        $censura = isset($_GET["censura"]) ? $_GET["censura"] : '';
 
-                $paragrafo = $_GET["paragrafo"];
-                $censura = $_GET["censura"];
+        //paragrafo
+        echo "<h1>Il tuo paragrafo è:</h1>";
+        $str = $paragrafo;
+        $length = strlen($str);
+        echo "<h4> $paragrafo </h4>";
+        echo "<p><i>la lunghezza del paragrafo è:</i></p>";
+        echo "<b> $length </b> ";
 
-                echo "<h1>Il tuo paragrafo è:</h1>";
-                $str = $paragrafo;
-                $length = strlen($str);
-                echo "<h4> $paragrafo </h4>";
-                echo "<p><i>la lunghezza del paragrafo è:</i></p>";
-                echo "<b> $length </b> ";
-                //paragrafo
-
-                echo "<h1>la parola censurata:</h1>";
-                $str = $censura;
-                $length = strlen($str);
-                echo "<h4>***</h4>";
-                echo "<p><i>la lunghezza della parola censurata è:</i></p>";
-                echo "<b> $length </b> "
-                // censura
-            ?>
+        // censura
+        echo "<h1>la parola censurata:</h1>";
+        $length = strlen($censura);
+        echo "<h4>$censura</h4>";
+        $paragrafo_censurato = str_replace($censura, '***', $paragrafo);
+        echo "<h4>" . $paragrafo_censurato . "</h4>";
+        echo "<p><i>la lunghezza della parola censurata è:</i></p>";
+        echo "<b>$length</b>";
+        ?>
         </div>
     </div>
   </div>
